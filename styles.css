@@ -1,52 +1,109 @@
-body,html{
-    margin: 0;
+body {
+    font-family: 'Arial', sans-serif;
 }
 
-.container{
+.container {
     display: flex;
-    flex-wrap: wrap;
- justify-content: space-between;
-    
-}
-.container .part-2{
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    text-align: left;
+    gap:200px;
 }
-.form{
+
+.part-1 {
+    align-items: center;
+}
+.part-2 {
+    padding: 20px;
+
+}
+#logo{
+    width: 50px;
+    height: 50px;
+
+}
+h1{
+    font-size: 25px;
+}
+h1::after{
+    content:"See what is going on with your business";
+    font-size: 10px;
+    margin-top: 5px;
+    display: block;
+    font-weight: lighter;
+}
+
+.google{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid black;
+    height: 40px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.word{
+    text-align: center;
+    font-size: 12px;
+}
+
+.form{
+    height: 200px;
+    width: 100%;
+}
+.emailDiv,.passDiv{
+    margin-top:20px;
 }
 #email,#pass{
-    width: 300px;
-    height: 30px;
     border-radius: 5px;
+    border:1px solid;
+    width: 400px;
+    height:30px;
+    margin-top: 5px;
 }
-
-.login,.google{
-    width:300px;
-    height: 30px;
-    text-align: center;
-    align-items: center;
-    border: 1px solid black;
-}
-h3{
-    margin-top: -20px;
-    font-size: 15px;
-}
-
-.emailDiv,.passDiv{
-    margin:20px;
-}
-label{
-    margin-bottom: 10px;
+button{
+    border-radius: 5px;
 }
 .remember{
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
+
+label a{
+    color:maroon;
+    font-size: 12px;
+}
+
+label a:hover{
+    color:maroon;
+}
+.login{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(185, 28, 28, 0.811);
+    color:white;
+    margin-top: 15px;
+}
+
 .register{
-    padding-top: 60px;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 13px;
 }
+.register a{
+    color: maroon;
+   
+}
+.register a:active{
+    color:black
+}
+::-webkit-input-placeholder {
+text-align:justify;
+opacity: 0.5;
+  }
+
+  @media (max-width:769px) {
+    .part-1{
+        display: none;
+    }
+  }
