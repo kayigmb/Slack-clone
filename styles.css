@@ -1,3 +1,52 @@
-h1{
-    color:gray;
+body,html{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+ justify-content: space-between;
+    
+}
+.container .part-2{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+#email,#pass{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.login,.google{
+    width:300px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid black;
+}
+h3{
+    margin-top: -20px;
+    font-size: 15px;
+}
+
+.emailDiv,.passDiv{
+    margin:20px;
+}
+label{
+    margin-bottom: 10px;
+}
+.remember{
+    display: flex;
+    justify-content: space-between;
+}
+.register{
+    padding-top: 60px;
 }
