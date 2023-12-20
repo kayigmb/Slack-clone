@@ -1,19 +1,30 @@
 body {
     font-family: 'Arial', sans-serif;
+
 }
 
 .container {
     display: flex;
-    justify-content: center;
-    gap:200px;
+    height: 97vh;
+   
 }
 
 .part-1 {
     align-items: center;
+ 
 }
+.part-1 img{
+    width: 100%;
+    height: 100%;
+}
+
 .part-2 {
     padding: 20px;
     width:400px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 20px;
+    overflow: hidden;
 }
 #logo{
     width: 50px;
@@ -67,6 +78,7 @@ h1::after{
 }
 button{
     border-radius: 5px;
+    border:1px solid maroon;
 }
 button:hover{
     cursor:pointer;
@@ -108,15 +120,30 @@ label a:hover{
     color:black
 }
 ::-webkit-input-placeholder {
-text-align:justify;
+margin-right: -15px;
+font-size: 12px;
 opacity: 0.5;
   }
 
-  @media (max-width:769px) {
+  @media (max-width:840px) {
     .part-1{
         display: none;
+        flex: 1;
+    }
+    .part-2{
+        border: none;
+        margin: 0 auto;
     }
   }
 #check {
     accent-color: maroon;
 }  
+
+/* .anime{
+    width: 100px;
+    height: 100px;
+    margin-top: -20px;
+    background-color: rebeccapurple;
+    clip-path: circle(38.3% at left  100px);
+}
+  */
